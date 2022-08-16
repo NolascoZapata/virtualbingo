@@ -1,0 +1,42 @@
+*{
+  margin: 0 ;
+  padding: 0  ;
+  box-sizing: border-box;
+}
+
+.ball{
+  padding: 30px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+
+}
+.game-num-table{
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.numBox{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.numbers-table{
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* background-color: #2196F3; */
+  
+}
+.number{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  width: 60px;
+}

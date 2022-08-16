@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bingo</title>
+</head>
+
+<body>
+  <h1>Virtual Bingo</h1>
+  <section class="section1">
+    <div class="ball" id="ball">
+      <div class="ring1">
+        <div class="ring2">
+          <input type="button" value="Click me!" id="numberBall" class="numberBall">
+        </div>
+      </div>
+
+    </div>
+    <input type="button" id="reset" class="reset-btn" value="Reset game">
+    
+
+    <div id="gameNumbers" class="game-num-table"></div>
+  </section>
+  <section class="section2">
+    <div class="card">
+      <h4>Player <input type="button" id="changeCard" value="Change card" class="change-card-btn"></h4>
+      <div class="numbers-table" id="player-table"></div>
+    </div>
+
+
+    <div class="card">
+      <h4>CPU</h4>
+      <div class="numbers-table" id="cpu-table"></div>
+    </div>
+    
+  </section>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>

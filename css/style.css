@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 30px;
+}
+body .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .section1 .ball {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 10px 0px 23px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 0px 23px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 0px 23px 0px rgba(0, 0, 0, 0.6);
+  background: radial-gradient(at top left, #259cfd 20%, #0003cc);
+}
+body .section1 .ball:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+body .section1 .ball .ring1 {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .section1 .ball .ring1 .ring2 {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(at top left, #259cfd 20%, #0003cc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .section1 .ball .ring1 .ring2 .numberBall {
+  background-color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: none;
+  font-size: 20px;
+}
+body .section1 .reset-btn {
+  margin: 5px 5px;
+  background-color: #fd2525;
+  color: white;
+  border: solid 4px #fd2525;
+  border-radius: 26%;
+}
+body .section1 .reset-btn:hover {
+  background-color: #ea5151;
+  transition: 0.5s;
+  border: solid 4px #ea5151;
+}
+body .section1 .game-num-table {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 1%;
+  border: 5px solid black;
+}
+body .section1 .game-num-table .numBox {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+body .section2 {
+  display: flex;
+  justify-content: space-between;
+}
+body .section2 .card {
+  margin: 5px 20px;
+}
+body .section2 .card h4 {
+  text-align: center;
+  font-size: 20px;
+}
+body .section2 .card h4 .change-card-btn {
+  color: #259cfd;
+  border: none;
+  background-color: white;
+  width: 40%;
+  font-size: 15px;
+}
+body .section2 .card h4 .change-card-btn:hover {
+  color: #2d36b7;
+  transition: 0.5s;
+}
+body .section2 .card .numbers-table {
+  margin: 10px;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+body .section2 .card .numbers-table .number {
+  background-color: white;
+  border: 2px solid #2d36b7;
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  width: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
