@@ -99,7 +99,7 @@ const resetGame = ()=> {
   playerSlots = 15;
   cpuSlots = 15;
   numberBall.value = "Click me!"
-  numberBall.style.fontSize = "20 px"
+
   fillTable()
   fillCrads(playerNum, playerTable);
   fillCrads(cpuNum, cpuTable);
@@ -110,7 +110,6 @@ const resetGame = ()=> {
 ball.addEventListener('click', e => {
   e.preventDefault();
   changeCardBtn.style.display = 'none'
-  numberBall.style.fontSize = '35px'
   if (gameNums.length < 91) {
     getRandomNumber();
     if (playerSlots === 0) {
