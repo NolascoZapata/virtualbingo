@@ -99,7 +99,8 @@ const resetGame = ()=> {
   gameNums = [];
   playerSlots = 15;
   cpuSlots = 15;
-  numberBall.value = "Click me!"
+  numberBall.value = "Start";
+  changeCardBtn.style.display = true
 
   fillTable()
   fillCrads(playerNum, playerTable);
