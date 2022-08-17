@@ -69,6 +69,7 @@ const getRandomNumber = () => {
       repeatedNum = gameNums.indexOf(num)
     } while (repeatedNum != -1);
   }
+
   gameNums.push(num)
   checkNumber(num)
   numberBall.value = num
@@ -80,11 +81,11 @@ const checkNumber = (number) => {
   let findPlayerNum = playerNum.find(n => n == number);
   let findCpuNum = cpuNum.find(n => n == number);
   document.getElementById(number).style.background = '#34eb77'
-  if (findPlayerNum) {
+  if (findPlayerNum != undefined) {
     document.getElementById(`${findPlayerNum}Player`).style.background = '#E74C3C'
       --playerSlots;
   }
-  if (findCpuNum) {
+  if (findCpuNum != undefined) {
     document.getElementById(`${findCpuNum}Cpu`).style.background = '#5499C7'
       --cpuSlots;
   }
